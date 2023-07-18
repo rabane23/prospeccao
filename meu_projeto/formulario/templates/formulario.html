@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Meu Formulário</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Formulário</h1>
+        <form method="post" action="">
+            {% csrf_token %}
+            <label for="equipamento">Equipamento:</label>
+            <input type="text" name="equipamento" id="equipamento" required>
+            <br>
+            <label for="qual_linha">Qual Linha:</label>
+            <select name="qual_linha" id="qual_linha" required>
+                <option value="LD">LD</option>
+                <option value="LP">LP</option>
+                <option value="PM">PM</option>
+            </select>
+            <br>
+            <label for="extensao">Extensão:</label>
+            <input type="text" name="extensao" id="extensao" required>
+            <br>
+            <label for="extensao_sem_leitura">Extensão sem leitura:</label>
+            <input type="number" name="extensao_sem_leitura" id="extensao_sem_leitura" >
+            <br>
+            <label for="espacamento_medio">Espaçamento médio:</label>
+            <input type="number" name="espacamento_medio" id="espacamento_medio" required>
+            <br>
+            <label for="tipo_dormente">Tipo de dormente:</label>
+            <select name="tipo_dormente" id="tipo_dormente" required>
+                <option value="Concreto monobloco">Concreto monobloco</option>
+                <option value="Concreto bi-bloco">Concreto bi-bloco</option>
+                <option value="Aço">Aço</option>
+                <option value="Madeira">Madeira</option>
+            </select>
+            <br>
+            <label for="quantidade_dormentes_intercalados">Quantidade de dormentes intercalados:</label>
+            <input type="number" name="quantidade_dormentes_intercalados" id="quantidade_dormentes_intercalados" >
+            <br>
+            <label for="tipo_fixacao">Tipo de fixação:</label>
+            <select name="tipo_fixacao" id="tipo_fixacao" required>
+                <option value="Elastica Deenick">Elastica Deenick</option>
+                <option value="Elastica Pandrol">Elastica Pandrol</option>
+                <option value="Rígida">Rígida</option>
+                <option value="Fast-clip">Fast-clip</option>
+            </select>
+            <br>
+            <label for="proporcao_fixacao_mista">Proporção Fixação Mista:</label>
+            <input type="text" name="proporcao_fixacao_mista" id="proporcao_fixacao_mista" >
+            <br>
+            <label for="tdc">57, 60 ou 68:</label>
+            <select name="tdc" id="tdc" required>
+                <option value="57">57</option>
+                <option value="60">60</option>
+                <option value="68">68</option>
+            </select>
+            <br>
+            <label for="concreto">1:20 ou 1:40:</label>
+            <select name="concreto" id="concreto" required>
+                <option value="1:20">1:20</option>
+                <option value="1:40">1:40</option>
+            </select>
+            <br>
+            <label for="isolado_nao_isol">Isolado N.Isol.:</label>
+            <select name="isolado_nao_isol" id="isolado_nao_isol" required>
+                <option value="Isolado">Isolado</option>
+                <option value="Não Isolado">Não Isolado</option>
+            </select>
+            <br>
+            <label for="malha1">Malha 1:</label>
+            <input type="number" name="malha1" id="malha1" >
+            <br>
+            <label for="malha2">Malha 2:</label>
+            <input type="number" name="malha2" id="malha2" >
+            <br>
+            <label for="malha3">Malha 3:</label>
+            <input type="number" name="malha3" id="malha3" >
+            <br>
+            <label for="malha4">Malha 4:</label>
+            <input type="number" name="malha4" id="malha4" >
+            <br>
+            <label for="malha5">Malha 5:</label>
+            <input type="number" name="malha5" id="malha5" >
+            <br>
+            <label for="malha6">Malha 6:</label>
+            <input type="number" name="malha6" id="malha6" >
+            <br>
+            <label for="malha7">Malha 7:</label>
+            <input type="number" name="malha7" id="malha7" >
+            <br>
+            <label for="malha8">Malha 8:</label>
+            <input type="number" name="malha8" id="malha8" >
+            <br>
+            <label for="malha9">Malha 9:</label>
+            <input type="number" name="malha9" id="malha9" >
+            <br>
+            <label for="malha10">Malha 10:</label>
+            <input type="number" name="malha10" id="malha10" >
+            <br>
+            <label for="junta">junta:</label>
+            <input type="number" name="junta" id="junta" >
+            <br>
+            <label for="guarda">guarda:</label>
+            <input type="number" name="guarda" id="guarda" >
+            <br>
+            <label for="solda">solda:</label>
+            <input type="number" name="solda" id="solda" >
+            <br>
+            <label for="Placa_Falta">Placa Falta:</label>
+            <input type="number" name="Placa_Falta" id="Placa_Falta" >
+            <br>
+            <label for="Placa_NOK">Placa NOK:</label>
+            <input type="number" name="Placa_NOK" id="Placa_NOK" >
+            <br>
+            <label for="Tirefond_Falta">Tirefond Falta:</label>
+            <input type="number" name="Tirefond_Falta" id="Tirefond_Falta" >
+            <br>
+            <label for="Tirefond_NOK">Tirefond NOK:</label>
+            <input type="number" name="Tirefond_NOK" id="Tirefond_NOK" >
+            <br>
+            <label for="Furo_NOK">Furo NOK:</label>
+            <input type="number" name="Furo_NOK" id="Furo_NOK" >
+            <br>
+            <label for="Shoulder_Falta">Shoulder Falta:</label>
+            <input type="number" name="Shoulder_Falta" id="Shoulder_Falta" >
+            <br>
+            <label for="Shoulder_NOK">Shoulder NOK:</label>
+            <input type="number" name="Shoulder_NOK" id="Shoulder_NOK" >
+            <br>
+            <label for="Palmilha_Falta">Palmilha Falta:</label>
+            <input type="number" name="Palmilha_Falta" id="Palmilha_Falta" >
+            <br>
+            <label for="Palmilha_NOK">Palmilha NOK:</label>
+            <input type="number" name="Palmilha_NOK" id="Palmilha_NOK" >
+            <br>
+            <label for="Isolador_Falta">Isolador Falta:</label>
+            <input type="number" name="Isolador_Falta" id="Isolador_Falta" >
+            <br>
+            <label for="Isolador_NOK">Isolador NOK:</label>
+            <input type="number" name="Isolador_NOK" id="Isolador_NOK" >
+            <br>
+            <input type="submit" value="Salvar e Próximo Equipamento">
+        </form>
+        <a href="{% url 'download_excel' %}" class="btn btn-primary">Baixar Formulário</a>
+    </div>
+</body>
+</html>
